@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapaPresentacion", "CapaPresentacion", "{16F8A864-4546-4BF9-A226-A56A47487A58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapaServicio", "CapaServicio", "{9232FCEE-CB29-418B-A51B-D2EC6CD7AD1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapaDatos", "CapaDatos", "{CCEB5254-3188-406C-81FA-026E1EBE99B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapaEntidad", "CapaEntidad", "{7F9C5CA4-9811-45C9-859E-93393793DE8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapaNegocio", "CapaNegocio", "{5E60C765-9CC6-4C34-A66A-093BE96CC3C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapaUtil", "CapaUtil", "{A8263049-9FB6-4861-9BFD-C8E46BE820EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.Entity", "Neptuno.Libreria.Entity\Neptuno.Libreria.Entity.csproj", "{D4E00664-9378-4023-87D7-C082725C4EE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.Service", "Neptuno.Librria.Service\Neptuno.Libreria.Service.csproj", "{3E09C124-A256-4A8C-A2C1-42AD4956EDDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.DataAccess", "Neptuno.Libreria.DataAccess\Neptuno.Libreria.DataAccess.csproj", "{53EED559-F730-4678-BC9D-35B98C336A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.Connection", "Neptuno.Libreria.Connection\Neptuno.Libreria.Connection.csproj", "{F22707C0-2878-45D0-942C-492067899C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.Bussines", "Neptuno.Libreria.Bussines\Neptuno.Libreria.Bussines.csproj", "{8CDD6DC6-95D6-4A09-B14D-43D673699BAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.EmpleadoWind", "Neptuno.Libreria.EmpleadoWind\Neptuno.Libreria.EmpleadoWind.csproj", "{AC5F6D0B-32C8-4B0B-ACA3-970512249CE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7ED3C522-7161-4A74-9269-532F735A8401} = {7ED3C522-7161-4A74-9269-532F735A8401}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapaWCF", "CapaWCF", "{300406BA-0584-4E1B-812A-839EBAB29869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.ServiceWCF", "Neptuno.Libreria.ServiceWCF\Neptuno.Libreria.ServiceWCF.csproj", "{7ED3C522-7161-4A74-9269-532F735A8401}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neptuno.Libreria.AppWebMVC", "Neptuno.Libreria.AppWebMVC\Neptuno.Libreria.AppWebMVC.csproj", "{B883376D-2738-4EC8-BC15-9AC332B5800A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7ED3C522-7161-4A74-9269-532F735A8401} = {7ED3C522-7161-4A74-9269-532F735A8401}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4E00664-9378-4023-87D7-C082725C4EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E00664-9378-4023-87D7-C082725C4EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E00664-9378-4023-87D7-C082725C4EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E00664-9378-4023-87D7-C082725C4EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E09C124-A256-4A8C-A2C1-42AD4956EDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E09C124-A256-4A8C-A2C1-42AD4956EDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E09C124-A256-4A8C-A2C1-42AD4956EDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E09C124-A256-4A8C-A2C1-42AD4956EDDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EED559-F730-4678-BC9D-35B98C336A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EED559-F730-4678-BC9D-35B98C336A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EED559-F730-4678-BC9D-35B98C336A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EED559-F730-4678-BC9D-35B98C336A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F22707C0-2878-45D0-942C-492067899C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22707C0-2878-45D0-942C-492067899C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22707C0-2878-45D0-942C-492067899C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22707C0-2878-45D0-942C-492067899C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CDD6DC6-95D6-4A09-B14D-43D673699BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CDD6DC6-95D6-4A09-B14D-43D673699BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CDD6DC6-95D6-4A09-B14D-43D673699BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CDD6DC6-95D6-4A09-B14D-43D673699BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC5F6D0B-32C8-4B0B-ACA3-970512249CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC5F6D0B-32C8-4B0B-ACA3-970512249CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC5F6D0B-32C8-4B0B-ACA3-970512249CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5F6D0B-32C8-4B0B-ACA3-970512249CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED3C522-7161-4A74-9269-532F735A8401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED3C522-7161-4A74-9269-532F735A8401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED3C522-7161-4A74-9269-532F735A8401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED3C522-7161-4A74-9269-532F735A8401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B883376D-2738-4EC8-BC15-9AC332B5800A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B883376D-2738-4EC8-BC15-9AC332B5800A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B883376D-2738-4EC8-BC15-9AC332B5800A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B883376D-2738-4EC8-BC15-9AC332B5800A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4E00664-9378-4023-87D7-C082725C4EE6} = {7F9C5CA4-9811-45C9-859E-93393793DE8C}
+		{3E09C124-A256-4A8C-A2C1-42AD4956EDDC} = {9232FCEE-CB29-418B-A51B-D2EC6CD7AD1C}
+		{53EED559-F730-4678-BC9D-35B98C336A3E} = {CCEB5254-3188-406C-81FA-026E1EBE99B1}
+		{F22707C0-2878-45D0-942C-492067899C57} = {A8263049-9FB6-4861-9BFD-C8E46BE820EA}
+		{8CDD6DC6-95D6-4A09-B14D-43D673699BAF} = {5E60C765-9CC6-4C34-A66A-093BE96CC3C5}
+		{AC5F6D0B-32C8-4B0B-ACA3-970512249CE4} = {16F8A864-4546-4BF9-A226-A56A47487A58}
+		{7ED3C522-7161-4A74-9269-532F735A8401} = {300406BA-0584-4E1B-812A-839EBAB29869}
+		{B883376D-2738-4EC8-BC15-9AC332B5800A} = {16F8A864-4546-4BF9-A226-A56A47487A58}
+	EndGlobalSection
+EndGlobal

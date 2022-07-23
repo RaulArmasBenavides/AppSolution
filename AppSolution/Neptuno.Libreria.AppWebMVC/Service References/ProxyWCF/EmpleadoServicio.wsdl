@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmpleadoServicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49257/EmpleadoServicio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49257/EmpleadoServicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49257/EmpleadoServicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Neptuno.Libreria.ServiceWCF" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoListar" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoBuscar" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoAdicionar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoAdicionar" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoAdicionar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoAdicionarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoActualizar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoActualizar" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoActualizar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoActualizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoEliminar" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoServicio_EmpleadoEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpleadoEliminarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEmpleadoServicio">
+    <wsdl:operation name="EmpleadoListar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoListar" message="tns:IEmpleadoServicio_EmpleadoListar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoListarResponse" message="tns:IEmpleadoServicio_EmpleadoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoBuscar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoBuscar" message="tns:IEmpleadoServicio_EmpleadoBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoBuscarResponse" message="tns:IEmpleadoServicio_EmpleadoBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoAdicionar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoAdicionar" message="tns:IEmpleadoServicio_EmpleadoAdicionar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoAdicionarResponse" message="tns:IEmpleadoServicio_EmpleadoAdicionar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoActualizar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoActualizar" message="tns:IEmpleadoServicio_EmpleadoActualizar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoActualizarResponse" message="tns:IEmpleadoServicio_EmpleadoActualizar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoEliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoEliminar" message="tns:IEmpleadoServicio_EmpleadoEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoServicio/EmpleadoEliminarResponse" message="tns:IEmpleadoServicio_EmpleadoEliminar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEmpleadoServicio" type="tns:IEmpleadoServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmpleadoListar">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoServicio/EmpleadoListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoBuscar">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoServicio/EmpleadoBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoAdicionar">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoServicio/EmpleadoAdicionar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoActualizar">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoServicio/EmpleadoActualizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpleadoEliminar">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoServicio/EmpleadoEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmpleadoServicio">
+    <wsdl:port name="BasicHttpBinding_IEmpleadoServicio" binding="tns:BasicHttpBinding_IEmpleadoServicio">
+      <soap:address location="http://localhost:49257/EmpleadoServicio.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

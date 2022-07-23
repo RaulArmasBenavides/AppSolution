@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a2e6eec-3efe-4178-a519-d65530a46e68" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49257/EmpleadoServicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmpleadoServicio.xsd" MetadataType="Schema" ID="319592b5-38de-4da9-94c7-0a5da0e49861" SourceId="1" SourceUrl="http://localhost:49257/EmpleadoServicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmpleadoServicio.wsdl" MetadataType="Wsdl" ID="0c7c6e81-546e-494b-a87f-d7d9742155cb" SourceId="1" SourceUrl="http://localhost:49257/EmpleadoServicio.svc?wsdl" />
+    <MetadataFile FileName="EmpleadoServicio.disco" MetadataType="Disco" ID="141f9adf-e2fa-40ac-84df-79352dd4584a" SourceId="1" SourceUrl="http://localhost:49257/EmpleadoServicio.svc?disco" />
+    <MetadataFile FileName="EmpleadoServicio1.xsd" MetadataType="Schema" ID="8c8eae4a-c555-4676-9e7d-6eae9bbbff89" SourceId="1" SourceUrl="http://localhost:49257/EmpleadoServicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmpleadoServicio2.xsd" MetadataType="Schema" ID="4a906596-0bf6-4e4a-b5e6-19d8eeb90b29" SourceId="1" SourceUrl="http://localhost:49257/EmpleadoServicio.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

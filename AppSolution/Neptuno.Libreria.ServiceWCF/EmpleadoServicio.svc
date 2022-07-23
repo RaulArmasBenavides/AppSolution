@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Neptuno.Libreria.ServiceWCF.EmpleadoServicio" CodeBehind="EmpleadoServicio.svc.cs" %>
